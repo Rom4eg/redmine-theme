@@ -4,6 +4,8 @@
  * v3.0
  */
 (function($, document, undefined) {
+  var displayTabsButtons_original = window.displayTabsButtons
+  window.displayTabsButtons = function(){}
   $(document).ready(function() {
     var cfg = {
       "stopwatch.enabled": true,
@@ -12,6 +14,7 @@
     };
 
     // Sidebar
+
 
     var sidebar_btn = $('<div id="sidebar_btn">&nbsp;</div>'),
         elem = $('#main:not(.nosidebar) #sidebar');
